@@ -33,7 +33,7 @@ public class AlbumController {
 
     @RequestMapping(method = RequestMethod.POST)
     public Album update(@RequestBody @Valid Album album) {
-        logger.info("Updating album " + album.getId());
+        logger.info("Updating album!! " + album.getId());
         return repository.save(album);
     }
 
